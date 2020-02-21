@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-    PlayerControls controls;
+    private PlayerControls controls;
+    private Vector2 move;
 
-    Vector2 move;
+    public float speed = 1f;
 
     void Awake()
     {
@@ -19,7 +20,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        Vector2 moveStep = new Vector2(move.x, move.y) * Time.deltaTime;
+        Vector2 moveStep = new Vector2(move.x, move.y) * speed * Time.deltaTime;
 
         transform.Translate(moveStep, Space.World);
     }
