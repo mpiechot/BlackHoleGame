@@ -11,11 +11,6 @@ To be added...
 
 To use this gamejam to learn new techniques, we also try some new stuff with this game. So we're adding the following Packages to our Project:
 
-**DOT - Job System**
-- Entities
-- Hybrid Renderer (if it is needed)
-- Unity Physics
-
 **Shader Graph**
 - Shader Graph
 - Post Processing
